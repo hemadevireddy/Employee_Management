@@ -1,886 +1,437 @@
-\# Employee Management System
-
-
+# Employee Management System
 
 A full-stack web application for managing employee records using React, Spring Boot, and MySQL. The application provides complete CRUD operations through a RESTful backend and a responsive web interface.
 
-
-
-\## Project Overview
-
-
+## Project Overview
 
 The Employee Management System provides a centralized interface for creating, viewing, updating, and deleting employee information.
 
-
-
 The project demonstrates practical implementation of:
 
+* Full-stack web development
+* RESTful API design
+* Spring Boot application development
+* JPA/Hibernate-based database interaction
+* MySQL database management
+* React-based frontend development
+* CRUD operations
+* Controller-Service-Repository architecture
+* API testing using Postman
+* Frontend-backend integration
 
+## Features
 
-\* Full-stack web development
+### Employee Management
 
-\* RESTful API design
+* Add new employees
+* View all employees
+* View individual employee details
+* Update employee information
+* Delete employee records
 
-\* Spring Boot application development
-
-\* JPA/Hibernate-based database interaction
-
-\* MySQL database management
-
-\* React-based frontend development
-
-\* CRUD operations
-
-\* Controller-Service-Repository architecture
-
-\* API testing using Postman
-
-\* Frontend-backend integration
-
-
-
-\## Features
-
-
-
-\### Employee Management
-
-
-
-\* Add new employees
-
-\* View all employees
-
-\* View individual employee details
-
-\* Update employee information
-
-\* Delete employee records
-
-
-
-\### Employee Information
-
-
+### Employee Information
 
 Each employee record contains:
 
+* Employee ID
+* Name
+* Email
+* Department
+* Designation
 
+### Backend
 
-\* Employee ID
+* RESTful API endpoints
+* Layered architecture
+* JPA/Hibernate ORM
+* MySQL database integration
+* CORS configuration
+* Exception handling for employee operations
 
-\* Name
+### Frontend
 
-\* Email
+* React-based user interface
+* Vite development environment
+* Employee management interface
+* Frontend-backend API integration
 
-\* Department
+## Prototype Screenshots
 
-\* Designation
+### Employee Management Dashboard
 
+![Employee Management Dashboard](docs/dashboard.png)
 
+### Add Employee
 
-\### Backend
+![Add Employee](docs/add-employee.png)
 
+### Employee Records
 
+![Employee Records](docs/employee-records.png)
 
-\* RESTful API endpoints
+### Update Employee
 
-\* Layered architecture
-
-\* JPA/Hibernate ORM
-
-\* MySQL database integration
-
-\* CORS configuration
-
-\* Exception handling for employee operations
-
-
-
-\### Frontend
-
-
-
-\* React-based user interface
-
-\* Vite development environment
-
-\* Employee management interface
-
-\* Frontend-backend API integration
-
-
-
-\## Prototype Screenshots
-
-
-
-\### Employee Management Dashboard
-
-
-
-!\[Employee Management Dashboard](docs/dashboard.png)
-
-
-
-\### Add Employee
-
-
-
-!\[Add Employee](docs/add-employee.png)
-
-
-
-\### Employee Records
-
-
-
-!\[Employee Records](docs/employee-records.png)
-
-
-
-\### Update Employee
-
-
-
-!\[Update Employee](docs/update-employee.png)
-
-
+![Update Employee](docs/update-employee.png)
 
 > Screenshots demonstrate the implemented prototype and user interface.
 
-
-
-\## System Architecture
-
-
+## System Architecture
 
 ```text
-
-&#x20;                   React Frontend
-
-&#x20;                        |
-
-&#x20;                        | REST API
-
-&#x20;                        v
-
-&#x20;                 Spring Boot API
-
-&#x20;                        |
-
-&#x20;             +----------+----------+
-
-&#x20;             |          |           |
-
-&#x20;             v          v           v
-
-&#x20;        Controller   Service   Repository
-
-&#x20;             |          |           |
-
-&#x20;             +----------+----------+
-
-&#x20;                        |
-
-&#x20;                        v
-
-&#x20;                 JPA / Hibernate
-
-&#x20;                        |
-
-&#x20;                        v
-
-&#x20;                 MySQL Database
-
+                    React Frontend
+                         |
+                         | REST API
+                         v
+                  Spring Boot API
+                         |
+              +----------+----------+
+              |          |           |
+              v          v           v
+         Controller   Service   Repository
+              |          |           |
+              +----------+----------+
+                         |
+                         v
+                  JPA / Hibernate
+                         |
+                         v
+                  MySQL Database
 ```
 
-
-
-\## Application Flow
-
-
+## Application Flow
 
 ```text
-
 User
-
-&#x20;|
-
-&#x20;v
-
+ |
+ v
 React Frontend
-
-&#x20;|
-
-&#x20;| HTTP Request
-
-&#x20;v
-
+ |
+ | HTTP Request
+ v
 Employee Controller
-
-&#x20;|
-
-&#x20;v
-
+ |
+ v
 Employee Service
-
-&#x20;|
-
-&#x20;v
-
+ |
+ v
 Employee Repository
-
-&#x20;|
-
-&#x20;v
-
+ |
+ v
 JPA / Hibernate
-
-&#x20;|
-
-&#x20;v
-
+ |
+ v
 MySQL Database
-
-&#x20;|
-
-&#x20;v
-
+ |
+ v
 HTTP Response
-
-&#x20;|
-
-&#x20;v
-
+ |
+ v
 React Frontend
-
 ```
 
+## Technology Stack
 
-
-\## Technology Stack
-
-
-
-\### Frontend
-
-
+### Frontend
 
 | Technology | Purpose             |
-
 | ---------- | ------------------- |
-
 | React      | User interface      |
-
 | Vite       | Frontend build tool |
-
 | JavaScript | Application logic   |
-
 | HTML5      | Page structure      |
-
 | CSS3       | Styling             |
 
-
-
-\### Backend
-
-
+### Backend
 
 | Technology      | Purpose               |
-
 | --------------- | --------------------- |
-
 | Java            | Backend programming   |
-
 | Spring Boot     | REST API development  |
-
 | Spring Data JPA | Database abstraction  |
-
 | Hibernate       | ORM                   |
-
 | Maven           | Dependency management |
 
-
-
-\### Database
-
-
+### Database
 
 | Technology | Purpose             |
-
 | ---------- | ------------------- |
-
 | MySQL 8.4  | Relational database |
-
 | SQL        | Database operations |
 
-
-
-\### Development and Testing
-
-
+### Development and Testing
 
 | Tool                    | Purpose             |
-
 | ----------------------- | ------------------- |
-
 | Git                     | Version control     |
-
 | GitHub                  | Source code hosting |
-
 | Postman                 | REST API testing    |
-
 | VS Code / IntelliJ IDEA | Development         |
 
-
-
-\## Project Structure
-
-
+## Project Structure
 
 ```text
-
-Employee\_Management/
-
+Employee_Management/
 |
-
 ├── frontend/
-
 │   ├── public/
-
 │   ├── src/
-
 │   │   ├── assets/
-
 │   │   ├── App.jsx
-
 │   │   ├── App.css
-
 │   │   ├── index.css
-
 │   │   └── main.jsx
-
 │   ├── package.json
-
 │   ├── package-lock.json
-
 │   └── vite.config.js
-
 |
-
 ├── src/
-
 │   ├── main/
-
 │   │   ├── java/
-
 │   │   │   └── com/
-
 │   │   │       └── employee/
-
-│   │   │           └── employee\_management/
-
+│   │   │           └── employee_management/
 │   │   │               ├── EmployeeManagementApplication.java
-
 │   │   │               ├── controller/
-
 │   │   │               │   └── EmployeeController.java
-
 │   │   │               ├── entity/
-
 │   │   │               │   └── Employee.java
-
 │   │   │               ├── repository/
-
 │   │   │               │   └── EmployeeRepository.java
-
 │   │   │               └── service/
-
 │   │   │                   └── EmployeeService.java
-
 │   │   └── resources/
-
 │   │
-
 │   └── test/
-
 |
-
 ├── .gitignore
-
 ├── pom.xml
-
 ├── mvnw
-
 ├── mvnw.cmd
-
 └── README.md
-
 ```
 
-
-
-\## REST API Endpoints
-
-
+## REST API Endpoints
 
 Base URL:
 
-
-
 ```text
-
 http://localhost:8080/api/employees
-
 ```
-
-
 
 | Method | Endpoint              | Description             |
-
 | ------ | --------------------- | ----------------------- |
-
 | POST   | `/api/employees`      | Add a new employee      |
-
 | GET    | `/api/employees`      | Retrieve all employees  |
-
 | GET    | `/api/employees/{id}` | Retrieve employee by ID |
-
 | PUT    | `/api/employees/{id}` | Update employee         |
-
 | DELETE | `/api/employees/{id}` | Delete employee         |
 
-
-
-\### Example Request
-
-
+### Example Request
 
 ```json
-
 {
-
-&#x20; "name": "John Doe",
-
-&#x20; "email": "john@example.com",
-
-&#x20; "department": "Engineering",
-
-&#x20; "designation": "Software Engineer"
-
+  "name": "John Doe",
+  "email": "john@example.com",
+  "department": "Engineering",
+  "designation": "Software Engineer"
 }
-
 ```
 
+## Installation and Setup
 
+### Prerequisites
 
-\## Installation and Setup
+* Java 17 or compatible JDK
+* Maven
+* MySQL 8.x
+* Node.js
+* npm
+* Git
 
-
-
-\### Prerequisites
-
-
-
-\* Java 17 or compatible JDK
-
-\* Maven
-
-\* MySQL 8.x
-
-\* Node.js
-
-\* npm
-
-\* Git
-
-
-
-\### Clone the Repository
-
-
+### Clone the Repository
 
 ```bash
-
-git clone https://github.com/hemadevireddy/Employee\_Management.git
-
+git clone https://github.com/hemadevireddy/Employee_Management.git
 ```
-
-
 
 Navigate into the project:
 
-
-
 ```bash
-
-cd Employee\_Management
-
+cd Employee_Management
 ```
 
-
-
-\### Configure MySQL
-
-
+### Configure MySQL
 
 Create the database:
 
-
-
 ```sql
-
-CREATE DATABASE employee\_management;
-
+CREATE DATABASE employee_management;
 ```
-
-
 
 Configure the local database connection in:
 
-
-
 ```text
-
 src/main/resources/application.properties
-
 ```
-
-
 
 Example:
 
-
-
 ```properties
-
-spring.datasource.url=jdbc:mysql://localhost:3306/employee\_management
-
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_management
 spring.datasource.username=root
-
-spring.datasource.password=YOUR\_PASSWORD
-
-
+spring.datasource.password=YOUR_PASSWORD
 
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-
-
 spring.jpa.hibernate.ddl-auto=update
-
 spring.jpa.show-sql=true
-
-spring.jpa.properties.hibernate.format\_sql=true
-
+spring.jpa.properties.hibernate.format_sql=true
 ```
-
-
 
 Do not commit real database credentials to GitHub.
 
-
-
-\### Run the Backend
-
-
+### Run the Backend
 
 From the project root:
 
-
-
 ```powershell
-
-.\\mvnw.cmd spring-boot:run
-
+.\mvnw.cmd spring-boot:run
 ```
-
-
 
 The backend runs at:
 
-
-
 ```text
-
 http://localhost:8080
-
 ```
 
-
-
-\### Run the Frontend
-
-
+### Run the Frontend
 
 Open a new terminal:
 
-
-
 ```bash
-
 cd frontend
-
 ```
-
-
 
 Install dependencies:
 
-
-
 ```bash
-
 npm install
-
 ```
-
-
 
 Start the development server:
 
-
-
 ```bash
-
 npm run dev
-
 ```
-
-
 
 The frontend runs at:
 
-
-
 ```text
-
 http://localhost:5173
-
 ```
 
-
-
-\## API Testing
-
-
+## API Testing
 
 The REST APIs were tested using Postman.
 
-
-
 Supported operations:
 
-
-
 ```text
-
 POST    Create Employee
-
 GET     Retrieve Employees
-
 GET     Retrieve Employee by ID
-
 PUT     Update Employee
-
 DELETE  Delete Employee
-
 ```
 
-
-
-\## Backend Architecture
-
-
+## Backend Architecture
 
 The backend follows a layered architecture.
 
-
-
-\### Controller Layer
-
-
+### Controller Layer
 
 Handles HTTP requests and responses.
 
-
-
 ```text
-
 EmployeeController
-
 ```
 
-
-
-\### Service Layer
-
-
+### Service Layer
 
 Contains application and business logic.
 
-
-
 ```text
-
 EmployeeService
-
 ```
 
-
-
-\### Repository Layer
-
-
+### Repository Layer
 
 Provides database access through Spring Data JPA.
 
-
-
 ```text
-
 EmployeeRepository
-
 ```
 
-
-
-\### Entity Layer
-
-
+### Entity Layer
 
 Defines the employee data model.
 
-
-
 ```text
-
 Employee
-
 ```
-
-
 
 This separation improves maintainability, readability, and scalability.
 
-
-
-\## Security Considerations
-
-
+## Security Considerations
 
 Local database configuration containing sensitive credentials is excluded from version control.
 
-
-
 Sensitive information such as database passwords, API keys, and credentials should not be committed to a public repository.
-
-
 
 For production deployment, environment variables or a secure secrets-management solution should be used.
 
-
-
-\## Learning Outcomes
-
-
+## Learning Outcomes
 
 This project provided practical experience with:
 
+* Java and object-oriented programming
+* Spring Boot REST API development
+* RESTful API design
+* CRUD operations
+* Spring Data JPA
+* Hibernate ORM
+* MySQL database integration
+* React frontend development
+* Frontend-backend communication
+* CORS configuration
+* API testing with Postman
+* Git and GitHub
+* Layered software architecture
 
-
-\* Java and object-oriented programming
-
-\* Spring Boot REST API development
-
-\* RESTful API design
-
-\* CRUD operations
-
-\* Spring Data JPA
-
-\* Hibernate ORM
-
-\* MySQL database integration
-
-\* React frontend development
-
-\* Frontend-backend communication
-
-\* CORS configuration
-
-\* API testing with Postman
-
-\* Git and GitHub
-
-\* Layered software architecture
-
-
-
-\## Future Enhancements
-
-
+## Future Enhancements
 
 Potential improvements include:
 
+* Employee authentication and role-based access control
+* Search and advanced filtering
+* Pagination
+* Input validation
+* Global exception handling
+* Automated unit and integration testing
+* Docker-based deployment
+* Cloud database integration
+* CI/CD pipeline
+* Production deployment
 
+## Author
 
-\* Employee authentication and role-based access control
-
-\* Search and advanced filtering
-
-\* Pagination
-
-\* Input validation
-
-\* Global exception handling
-
-\* Automated unit and integration testing
-
-\* Docker-based deployment
-
-\* Cloud database integration
-
-\* CI/CD pipeline
-
-\* Production deployment
-
-
-
-\## Author
-
-
-
-\*\*Hema Sudarshini Devireddy\*\*
-
-
+**Hema Sudarshini Devireddy**
 
 B.Tech - Computer and Communication Engineering
-
 Amrita Vishwa Vidyapeetham
 
+GitHub: [hemadevireddy](https://github.com/hemadevireddy)
 
-
-GitHub: \[hemadevireddy](https://github.com/hemadevireddy)
-
-
-
-\## License
-
-
+## License
 
 This project is developed for educational and portfolio purposes.
-
-
-
-
-
-
-
-
-
-
-
-
-
