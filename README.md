@@ -59,15 +59,18 @@ Each employee record contains:
 
 ### Add Employee
 
-![Add Employee](Add_employee.png)
+<img width="1917" height="862" alt="Add_employee" src="https://github.com/user-attachments/assets/832e7672-55f5-4578-b9f2-8fc22ddda48e" />
+
 
 ### Employee Records
 
-![Employee Records](search_employee.png)
+<img width="1915" height="1092" alt="search_employee" src="https://github.com/user-attachments/assets/5026644e-2c2b-40cd-91fe-4ee84edbbc58" />
+
 
 ### Update Employee
 
-![Update and Delete Employee](Update_delete_Employee.png)
+<img width="1917" height="1077" alt="Update_delete_Employee" src="https://github.com/user-attachments/assets/e2da7a2f-db7e-481e-bc06-dd276129beb0" />
+
 
 > Screenshots demonstrate the implemented prototype and user interface.
 
