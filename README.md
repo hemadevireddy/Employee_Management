@@ -57,21 +57,17 @@ Each employee record contains:
 
 ## Prototype Screenshots
 
-### Employee Management Dashboard
-
-![Employee Management Dashboard](docs/dashboard.png)
-
 ### Add Employee
 
-![Add Employee](docs/add-employee.png)
+![Add Employee](Add_employee.png)
 
 ### Employee Records
 
-![Employee Records](docs/employee-records.png)
+![Employee Records](search_employee.png)
 
 ### Update Employee
 
-![Update Employee](docs/update-employee.png)
+![Update and Delete Employee](Update_delete_Employee.png)
 
 > Screenshots demonstrate the implemented prototype and user interface.
 
@@ -99,35 +95,9 @@ Each employee record contains:
 ```
 
 ## Application Flow
+<img width="1226" height="556" alt="Option Pricing and Risk Management A Real-Time Approach - Selection" src="https://github.com/user-attachments/assets/8b197e61-e43b-4ea5-ac73-6f199862dc3b" />
 
-```text
-User
- |
- v
-React Frontend
- |
- | HTTP Request
- v
-Employee Controller
- |
- v
-Employee Service
- |
- v
-Employee Repository
- |
- v
-JPA / Hibernate
- |
- v
-MySQL Database
- |
- v
-HTTP Response
- |
- v
-React Frontend
-```
+
 
 ## Technology Stack
 
